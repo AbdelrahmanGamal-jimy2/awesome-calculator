@@ -12,18 +12,15 @@
 public class CalculatorControler {
     
     double  addition(double  firstNum, double  secondNum)
-    {
-        
+    {       
         return firstNum + secondNum;
     }
     double  subtraction(double firstNum, double secondNum)
-    {
-        
+    {  
         return firstNum - secondNum;
     }
     double multiplication(double firstNum, double secondNum)
     {
-        
         return firstNum * secondNum;
     }
     double division(double numerator , double denominator)
