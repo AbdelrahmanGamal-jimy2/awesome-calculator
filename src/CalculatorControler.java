@@ -11,48 +11,46 @@
 
 public class CalculatorControler {
     
-    double  addition(double  firstNum, double  secoundNum)
+    double  addition(double  firstNum, double  secondNum)
     {
         
-        return firstNum + secoundNum;
+        return firstNum + secondNum;
     }
-    double  subtraction(double firstNum, double secoundNum)
+    double  subtraction(double firstNum, double secondNum)
     {
         
-        return firstNum - secoundNum;
+        return firstNum - secondNum;
     }
-    double multiplication(double firstNum, double secoundNum)
+    double multiplication(double firstNum, double secondNum)
     {
         
-        return firstNum * secoundNum;
+        return firstNum * secondNum;
     }
     double division(double numerator , double denominator)
     {
         return numerator / denominator;
+        
     }
-    double Power(double number, double toThePower)
+    double power(double number, double toThePower)
     {
        if (toThePower == 1)
        {
            return number;
        }
-       return number * Power( number,  toThePower-1);
+       return number * power( number,  toThePower-1);
     }
     double tan(double number)
     {
        return Math.tan(Math.toRadians(number));
     }
-    double Factorial(double number)
+    int factorial(int number)
     {
         if (number == 1)
         {
-            return 1.0;
+            return 1;
         }
-        return number * Factorial(number - 1);
+        return number * factorial(number - 1);
     }
     
-    
-    
-    
-    
 }
+
