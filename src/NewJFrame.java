@@ -81,6 +81,9 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jTextField1.getAccessibleContext().setAccessibleName("TextFeild1");
+        jTextField1.getAccessibleContext().setAccessibleDescription("TextFeild1");
+
         jPanel4.setBackground(new java.awt.Color(53, 53, 53));
         jPanel4.setForeground(new java.awt.Color(53, 53, 53));
 
@@ -89,6 +92,11 @@ public class NewJFrame extends javax.swing.JFrame {
         jButton1.setText("0");
         jButton1.setBorder(null);
         jButton1.setContentAreaFilled(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton2.setForeground(java.awt.Color.white);
@@ -129,26 +137,51 @@ public class NewJFrame extends javax.swing.JFrame {
         jButton6.setForeground(java.awt.Color.white);
         jButton6.setText("2");
         jButton6.setContentAreaFilled(false);
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton7.setForeground(java.awt.Color.white);
         jButton7.setText("3");
         jButton7.setContentAreaFilled(false);
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton8.setForeground(java.awt.Color.white);
         jButton8.setText("5");
         jButton8.setContentAreaFilled(false);
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         jButton9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton9.setForeground(java.awt.Color.white);
         jButton9.setText("6");
         jButton9.setContentAreaFilled(false);
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         jButton10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton10.setForeground(java.awt.Color.white);
         jButton10.setText("7");
         jButton10.setContentAreaFilled(false);
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
         jButton11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton11.setForeground(java.awt.Color.white);
@@ -210,6 +243,11 @@ public class NewJFrame extends javax.swing.JFrame {
         jButton19.setForeground(java.awt.Color.white);
         jButton19.setText("tan");
         jButton19.setContentAreaFilled(false);
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -332,6 +370,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         // TODO add your handling code here:
+        jTextField1.setText("0");
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
@@ -340,19 +379,139 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        String currentValue = jTextField1.getText();
+        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0)
+        {
+            jTextField1.setText("4");
+        }
+        else
+        {
+          jTextField1.setText(currentValue + "4");
+        }
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        String currentValue = jTextField1.getText();
+        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 )
+        {
+            jTextField1.setText("1");
+        }
+        else
+        {
+          jTextField1.setText(currentValue + "1");
+        }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        String currentValue = jTextField1.getText();
+        if(currentValue.contains(".") == true )
+        {
+            jTextField1.setText("Invalid Number");
+        }
+        else if(currentValue.compareTo("Invalid Number") == 0)
+        {
+            jTextField1.setText("Invalid Number");
+        }
+        else
+        {
+          jTextField1.setText(currentValue + ".");
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        String currentValue = jTextField1.getText();
+        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0)
+        {
+            jTextField1.setText("0");
+        }
+        else
+        {
+          jTextField1.setText(currentValue + "0");
+        }
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        String currentValue = jTextField1.getText();
+        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0)
+        {
+            jTextField1.setText("2");
+        }
+        else
+        {
+          jTextField1.setText(currentValue + "2");
+        }
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        String currentValue = jTextField1.getText();
+        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0)
+        {
+            jTextField1.setText("3");
+        }
+        else
+        {
+          jTextField1.setText(currentValue + "3");
+        }
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        String currentValue = jTextField1.getText();
+        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0)
+        {
+            jTextField1.setText("4");
+        }
+        else
+        {
+          jTextField1.setText(currentValue + "4");
+        }
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+        String currentValue = jTextField1.getText();
+        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0)
+        {
+            jTextField1.setText("6");
+        }
+        else
+        {
+          jTextField1.setText(currentValue + "6");
+        }
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+        String currentValue = jTextField1.getText();
+        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0)
+        {
+            jTextField1.setText("7");
+        }
+        else
+        {
+          jTextField1.setText(currentValue + "7");
+        }
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        // TODO add your handling code here:
+        String currentValue = jTextField1.getText();
+        if(currentValue.compareTo("Invalid Number") == 0)
+        {
+            jTextField1.setText("Invalid Number");
+        }
+        jTextField1.setText("tan(");
+    }//GEN-LAST:event_jButton19ActionPerformed
 
     /**
      * @param args the command line arguments
