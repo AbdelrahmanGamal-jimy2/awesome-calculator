@@ -508,9 +508,16 @@ public class NewJFrame extends javax.swing.JFrame {
         String currentValue = jTextField1.getText();
         if(currentValue.compareTo("Invalid Number") == 0)
         {
+            jTextField1.setText("tan(");
+        }
+        else if(currentValue.contains("tan") == true )
+        {
             jTextField1.setText("Invalid Number");
         }
-        jTextField1.setText("tan(");
+        else
+        {
+            jTextField1.setText("tan(");
+        }
     }//GEN-LAST:event_jButton19ActionPerformed
 
     /**
