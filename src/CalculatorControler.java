@@ -11,7 +11,20 @@
 
 public class CalculatorControler {
     
-    double  addition(double  firstNum, double  secondNum)
+    private static CalculatorControler single_instance = null;
+    private CalculatorControler()
+    {
+        
+    }
+    public static CalculatorControler getInstance() 
+    { 
+        if (single_instance == null) 
+            single_instance = new CalculatorControler(); 
+  
+        return single_instance; 
+    } 
+    
+    public double  addition(double  firstNum, double  secondNum)
     {       
         return firstNum + secondNum;
     }
