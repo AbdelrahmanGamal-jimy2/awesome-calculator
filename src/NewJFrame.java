@@ -386,10 +386,11 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(51, 51, 51)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnOne, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnThree, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnThree, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(btnOne, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnZero, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -437,6 +438,22 @@ public class NewJFrame extends javax.swing.JFrame {
         int indexOfOperator = 0;
         if(token.compareTo("") == 0)
         {
+            if(operation.compareTo("(") == 0)
+            {
+                token = "(";
+                return;
+            }
+            /*String secondValue = "";
+            if(token.compareTo("(") == 0)
+            {
+                indexOfOperator = currentValue.lastIndexOf("(");
+                for(int i = indexOfOperator +1;i<currentValue.length();i++)
+                {
+                    secondValue+= currentValue.charAt(i);
+                }
+                number = "" + controler.tan(Float.parseFloat(secondValue));
+                jTextField1.setText(number);
+            }*/
             number = currentValue;
             token = operation;
             jTextField1.setText(currentValue + operation);
@@ -560,8 +577,35 @@ public class NewJFrame extends javax.swing.JFrame {
                         token = operation;
                     }
                     break;
-                    
+                case "(":
+                    indexOfOperator = currentValue.lastIndexOf("(");
+                    for(int i =indexOfOperator+1;i<currentValue.length();i++)
+                    {
+                        secondValue+= currentValue.charAt(i);
+                    }
+                    if(indexOfOperator == currentValue.length()-1 )
+                    {
+                        token = operation;
+                        jTextField1.setText(currentValue.substring(0, currentValue.length()-1) + operation);
+                    }
+                    else
+                    {
+                        number = "" + controler.tan(Float.parseFloat(secondValue));
+                        if(operation.compareTo("(") == 0)
+                        {
+                            jTextField1.setText(number);
+                            token = "";
+                        }
+                        else
+                        {
+                            jTextField1.setText(number + operation);
+                            token = operation;
+                        }
                         
+                        
+                    }
+                    break;
+                    
             }
         }
     }
@@ -672,11 +716,11 @@ public class NewJFrame extends javax.swing.JFrame {
         String currentValue = jTextField1.getText();
         if(currentValue.compareTo("0") == 0)
         {
-            jTextField1.setText("4");
+            jTextField1.setText("5");
         }
         else
         {
-          jTextField1.setText(currentValue + "4");
+          jTextField1.setText(currentValue + "5");
         }
     }//GEN-LAST:event_btnFiveActionPerformed
 
@@ -709,13 +753,15 @@ public class NewJFrame extends javax.swing.JFrame {
     private void btnTanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTanActionPerformed
         // TODO add your handling code here:
         String currentValue = jTextField1.getText();
-        if(currentValue.contains("tan") == true )
+        if(currentValue.contains("tan(") == true )
         {
-            jTextField1.setText("Invalid Number");
+            //jTextField1.setText("Invalid Number");
+            calculate("(");
         }
         else
         {
             jTextField1.setText("tan(");
+            calculate("(");
         }
     }//GEN-LAST:event_btnTanActionPerformed
 
@@ -741,6 +787,10 @@ public class NewJFrame extends javax.swing.JFrame {
         else if(currentValue.contains("^"))
         {
             calculate("^");
+        }
+        else if(currentValue.contains("("))
+        {
+            calculate("(");
         }
     }//GEN-LAST:event_btnEqualActionPerformed
 
@@ -785,8 +835,8 @@ public class NewJFrame extends javax.swing.JFrame {
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         // TODO add your handling code here:
         String currentValue = jTextField1.getText();
-        if(currentValue.charAt(currentValue.length()-1) == '+' || currentValue.charAt(currentValue.length()-1) == '-' || currentValue.charAt(currentValue.length()-1) == 'X' 
-                || currentValue.charAt(currentValue.length()-1) == '÷' || currentValue.charAt(currentValue.length()-1) == '^')
+        if(currentValue.charAt(currentValue.length()-1) == '+' || currentValue.charAt(currentValue.length()-1) == '-' || currentValue.charAt(currentValue.length()-1) == 'X'
+            || currentValue.charAt(currentValue.length()-1) == '÷' || currentValue.charAt(currentValue.length()-1) == '^')
         {
             token = "";
             jTextField1.setText(currentValue.substring(0, currentValue.length()-1));
