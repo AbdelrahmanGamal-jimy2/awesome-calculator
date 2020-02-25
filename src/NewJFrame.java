@@ -222,12 +222,17 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        btnDelete.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnDelete.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnDelete.setForeground(java.awt.Color.white);
         btnDelete.setText("⌫");
         btnDelete.setToolTipText("");
         btnDelete.setBorderPainted(false);
         btnDelete.setContentAreaFilled(false);
+        btnDelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeleteActionPerformed(evt);
+            }
+        });
 
         btnClear.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnClear.setForeground(java.awt.Color.white);
@@ -326,7 +331,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnOne, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnZero, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnZero, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnfour, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnClear))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -341,7 +346,7 @@ public class NewJFrame extends javax.swing.JFrame {
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel4Layout.createSequentialGroup()
                                         .addComponent(btnDot, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(btnPower, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel4Layout.createSequentialGroup()
                                         .addComponent(btnTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -352,10 +357,11 @@ public class NewJFrame extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(btnSix, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(btnDifference, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
-                                    .addComponent(btnEqual, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
-                                    .addComponent(btnSum, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(btnDifference, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                                        .addComponent(btnSum, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(btnEqual, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(10, 10, 10))))
         );
         jPanel4Layout.setVerticalGroup(
@@ -383,7 +389,10 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnOne, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnThree, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(btnThree, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnZero, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnDifference, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -391,19 +400,13 @@ public class NewJFrame extends javax.swing.JFrame {
                             .addComponent(btnFive, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnfour, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnSum, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
+                        .addComponent(btnSum, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnZero, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnDot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnEqual, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(22, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnPower, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                            .addComponent(btnEqual, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnPower, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnDot, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -422,7 +425,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(99, Short.MAX_VALUE))
+                .addContainerGap(122, Short.MAX_VALUE))
         );
 
         pack();
@@ -580,7 +583,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void btnfourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfourActionPerformed
         // TODO add your handling code here:
         String currentValue = jTextField1.getText();
-        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
+        if(currentValue.compareTo("0") == 0)
         {
             jTextField1.setText("4");
         }
@@ -593,7 +596,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void btnOneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOneActionPerformed
         // TODO add your handling code here:
         String currentValue = jTextField1.getText();
-        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
+        if(currentValue.compareTo("0") == 0)
         {
             jTextField1.setText("1");
         }
@@ -627,7 +630,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void btnZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnZeroActionPerformed
         // TODO add your handling code here:
         String currentValue = jTextField1.getText();
-        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
+        if(currentValue.compareTo("0") == 0)
         {
             jTextField1.setText("0");
         }
@@ -641,7 +644,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void btnTwoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTwoActionPerformed
         // TODO add your handling code here:
         String currentValue = jTextField1.getText();
-        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
+        if(currentValue.compareTo("0") == 0)
         {
             jTextField1.setText("2");
         }
@@ -654,7 +657,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void btnThreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThreeActionPerformed
         // TODO add your handling code here:
         String currentValue = jTextField1.getText();
-        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
+        if(currentValue.compareTo("0") == 0)
         {
             jTextField1.setText("3");
         }
@@ -667,7 +670,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void btnFiveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFiveActionPerformed
         // TODO add your handling code here:
         String currentValue = jTextField1.getText();
-        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
+        if(currentValue.compareTo("0") == 0)
         {
             jTextField1.setText("4");
         }
@@ -680,7 +683,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void btnSixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSixActionPerformed
         // TODO add your handling code here:
         String currentValue = jTextField1.getText();
-        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
+        if(currentValue.compareTo("0") == 0)
         {
             jTextField1.setText("6");
         }
@@ -693,7 +696,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void btnSevenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSevenActionPerformed
         // TODO add your handling code here:
         String currentValue = jTextField1.getText();
-        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
+        if(currentValue.compareTo("0") == 0)
         {
             jTextField1.setText("7");
         }
@@ -706,11 +709,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void btnTanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTanActionPerformed
         // TODO add your handling code here:
         String currentValue = jTextField1.getText();
-        if(currentValue.compareTo("Invalid Number") == 0)
-        {
-            jTextField1.setText("tan(");
-        }
-        else if(currentValue.contains("tan") == true )
+        if(currentValue.contains("tan") == true )
         {
             jTextField1.setText("Invalid Number");
         }
@@ -756,7 +755,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void btnEightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEightActionPerformed
         // TODO add your handling code here:
         String currentValue = jTextField1.getText();
-        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
+        if(currentValue.compareTo("0") == 0)
         {
             jTextField1.setText("8");
         }
@@ -769,7 +768,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void btnNineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNineActionPerformed
         // TODO add your handling code here:
         String currentValue = jTextField1.getText();
-        if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
+        if(currentValue.compareTo("0") == 0)
         {
             jTextField1.setText("9");
         }
@@ -782,6 +781,21 @@ public class NewJFrame extends javax.swing.JFrame {
     private void btnPowerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPowerActionPerformed
         calculate("^");
     }//GEN-LAST:event_btnPowerActionPerformed
+
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+        // TODO add your handling code here:
+        String currentValue = jTextField1.getText();
+        if(currentValue.charAt(currentValue.length()-1) == '+' || currentValue.charAt(currentValue.length()-1) == '-' || currentValue.charAt(currentValue.length()-1) == 'X' 
+                || currentValue.charAt(currentValue.length()-1) == '÷' || currentValue.charAt(currentValue.length()-1) == '^')
+        {
+            token = "";
+            jTextField1.setText(currentValue.substring(0, currentValue.length()-1));
+        }
+        else
+        {
+            jTextField1.setText(currentValue.substring(0, currentValue.length()-1));
+        }
+    }//GEN-LAST:event_btnDeleteActionPerformed
 
     /**
      * @param args the command line arguments
