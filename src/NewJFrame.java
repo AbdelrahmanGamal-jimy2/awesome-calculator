@@ -50,6 +50,7 @@ public class NewJFrame extends javax.swing.JFrame {
         btnDifference = new javax.swing.JButton();
         btnMultiplication = new javax.swing.JButton();
         btnTan = new javax.swing.JButton();
+        btnPower = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -100,9 +101,10 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        btnDot.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnDot.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnDot.setForeground(java.awt.Color.white);
         btnDot.setText(".");
+        btnDot.setBorderPainted(false);
         btnDot.setContentAreaFilled(false);
         btnDot.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,6 +115,7 @@ public class NewJFrame extends javax.swing.JFrame {
         btnEqual.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnEqual.setForeground(new java.awt.Color(240, 42, 130));
         btnEqual.setText("=");
+        btnEqual.setBorderPainted(false);
         btnEqual.setContentAreaFilled(false);
         btnEqual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,6 +126,7 @@ public class NewJFrame extends javax.swing.JFrame {
         btnOne.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnOne.setForeground(java.awt.Color.white);
         btnOne.setText("1");
+        btnOne.setBorderPainted(false);
         btnOne.setContentAreaFilled(false);
         btnOne.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,6 +137,7 @@ public class NewJFrame extends javax.swing.JFrame {
         btnfour.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnfour.setForeground(java.awt.Color.white);
         btnfour.setText("4");
+        btnfour.setBorderPainted(false);
         btnfour.setContentAreaFilled(false);
         btnfour.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,6 +148,7 @@ public class NewJFrame extends javax.swing.JFrame {
         btnTwo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnTwo.setForeground(java.awt.Color.white);
         btnTwo.setText("2");
+        btnTwo.setBorderPainted(false);
         btnTwo.setContentAreaFilled(false);
         btnTwo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,6 +159,7 @@ public class NewJFrame extends javax.swing.JFrame {
         btnThree.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnThree.setForeground(java.awt.Color.white);
         btnThree.setText("3");
+        btnThree.setBorderPainted(false);
         btnThree.setContentAreaFilled(false);
         btnThree.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -163,6 +170,7 @@ public class NewJFrame extends javax.swing.JFrame {
         btnFive.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnFive.setForeground(java.awt.Color.white);
         btnFive.setText("5");
+        btnFive.setBorderPainted(false);
         btnFive.setContentAreaFilled(false);
         btnFive.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -173,6 +181,7 @@ public class NewJFrame extends javax.swing.JFrame {
         btnSix.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnSix.setForeground(java.awt.Color.white);
         btnSix.setText("6");
+        btnSix.setBorderPainted(false);
         btnSix.setContentAreaFilled(false);
         btnSix.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -183,6 +192,7 @@ public class NewJFrame extends javax.swing.JFrame {
         btnSeven.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnSeven.setForeground(java.awt.Color.white);
         btnSeven.setText("7");
+        btnSeven.setBorderPainted(false);
         btnSeven.setContentAreaFilled(false);
         btnSeven.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -193,6 +203,7 @@ public class NewJFrame extends javax.swing.JFrame {
         btnEight.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnEight.setForeground(java.awt.Color.white);
         btnEight.setText("8");
+        btnEight.setBorderPainted(false);
         btnEight.setContentAreaFilled(false);
         btnEight.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -203,6 +214,7 @@ public class NewJFrame extends javax.swing.JFrame {
         btnNine.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnNine.setForeground(java.awt.Color.white);
         btnNine.setText("9");
+        btnNine.setBorderPainted(false);
         btnNine.setContentAreaFilled(false);
         btnNine.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -214,11 +226,13 @@ public class NewJFrame extends javax.swing.JFrame {
         btnDelete.setForeground(java.awt.Color.white);
         btnDelete.setText("⌫");
         btnDelete.setToolTipText("");
+        btnDelete.setBorderPainted(false);
         btnDelete.setContentAreaFilled(false);
 
         btnClear.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnClear.setForeground(java.awt.Color.white);
         btnClear.setText("CL");
+        btnClear.setBorderPainted(false);
         btnClear.setContentAreaFilled(false);
         btnClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -228,6 +242,8 @@ public class NewJFrame extends javax.swing.JFrame {
 
         btnDivison.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnDivison.setForeground(new java.awt.Color(240, 42, 130));
+        btnDivison.setText("÷");
+        btnDivison.setBorderPainted(false);
         btnDivison.setContentAreaFilled(false);
         btnDivison.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -238,6 +254,7 @@ public class NewJFrame extends javax.swing.JFrame {
         btnSum.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnSum.setForeground(new java.awt.Color(240, 42, 130));
         btnSum.setText("+");
+        btnSum.setBorderPainted(false);
         btnSum.setContentAreaFilled(false);
         btnSum.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -248,6 +265,7 @@ public class NewJFrame extends javax.swing.JFrame {
         btnDifference.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnDifference.setForeground(new java.awt.Color(240, 42, 130));
         btnDifference.setText("-");
+        btnDifference.setBorderPainted(false);
         btnDifference.setContentAreaFilled(false);
         btnDifference.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -258,6 +276,7 @@ public class NewJFrame extends javax.swing.JFrame {
         btnMultiplication.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnMultiplication.setForeground(new java.awt.Color(240, 42, 130));
         btnMultiplication.setText("X");
+        btnMultiplication.setBorderPainted(false);
         btnMultiplication.setContentAreaFilled(false);
         btnMultiplication.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -268,10 +287,23 @@ public class NewJFrame extends javax.swing.JFrame {
         btnTan.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnTan.setForeground(java.awt.Color.white);
         btnTan.setText("tan");
+        btnTan.setBorderPainted(false);
         btnTan.setContentAreaFilled(false);
         btnTan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnTanActionPerformed(evt);
+            }
+        });
+
+        btnPower.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnPower.setForeground(java.awt.Color.white);
+        btnPower.setText("^");
+        btnPower.setBorder(null);
+        btnPower.setBorderPainted(false);
+        btnPower.setContentAreaFilled(false);
+        btnPower.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPowerActionPerformed(evt);
             }
         });
 
@@ -307,7 +339,10 @@ public class NewJFrame extends javax.swing.JFrame {
                                 .addComponent(btnDivison, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnDot, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(btnDot, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btnPower, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel4Layout.createSequentialGroup()
                                         .addComponent(btnTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -317,10 +352,10 @@ public class NewJFrame extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(btnSix, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnSum, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnDifference, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnEqual, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(btnDifference, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                                    .addComponent(btnEqual, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                                    .addComponent(btnSum, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                         .addGap(10, 10, 10))))
         );
         jPanel4Layout.setVerticalGroup(
@@ -348,12 +383,7 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnOne, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnThree, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnZero, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnDot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(btnThree, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnDifference, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -361,10 +391,19 @@ public class NewJFrame extends javax.swing.JFrame {
                             .addComponent(btnFive, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnfour, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnSum, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnSum, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(btnEqual, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(22, Short.MAX_VALUE))))
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnZero, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnDot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnEqual, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(22, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnPower, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -383,7 +422,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(102, Short.MAX_VALUE))
+                .addContainerGap(99, Short.MAX_VALUE))
         );
 
         pack();
@@ -499,7 +538,27 @@ public class NewJFrame extends javax.swing.JFrame {
                         jTextField1.setText(number + operation);
                         token = operation;
                     }
-                    break;  
+                    break;
+                case "^":
+                    indexOfOperator = currentValue.lastIndexOf("^");
+                    for(int i =indexOfOperator+1;i<currentValue.length();i++)
+                    {
+                        secondValue+= currentValue.charAt(i);
+                    }
+                    if(indexOfOperator == currentValue.length()-1 )
+                    {
+                        token = operation;
+                        jTextField1.setText(currentValue.substring(0, currentValue.length()-1) + operation);
+                    }
+                    else
+                    {
+                        number = "" + controler.power(Float.parseFloat(number), Float.parseFloat(secondValue));
+                        jTextField1.setText(number + operation);
+                        token = operation;
+                    }
+                    break;
+                    
+                        
             }
         }
     }
@@ -680,6 +739,10 @@ public class NewJFrame extends javax.swing.JFrame {
         {
             calculate("÷");
         }
+        else if(currentValue.contains("^"))
+        {
+            calculate("^");
+        }
     }//GEN-LAST:event_btnEqualActionPerformed
 
     private void btnSumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumActionPerformed
@@ -715,6 +778,10 @@ public class NewJFrame extends javax.swing.JFrame {
           jTextField1.setText(currentValue + "9");
         }
     }//GEN-LAST:event_btnNineActionPerformed
+
+    private void btnPowerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPowerActionPerformed
+        calculate("^");
+    }//GEN-LAST:event_btnPowerActionPerformed
 
     /**
      * @param args the command line arguments
@@ -763,6 +830,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnMultiplication;
     private javax.swing.JButton btnNine;
     private javax.swing.JButton btnOne;
+    private javax.swing.JButton btnPower;
     private javax.swing.JButton btnSeven;
     private javax.swing.JButton btnSix;
     private javax.swing.JButton btnSum;
