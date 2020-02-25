@@ -29,8 +29,8 @@ public class NewJFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel3 = new javax.swing.JPanel();
-        textfeildScreen = new javax.swing.JTextField();
-        panalBtns = new javax.swing.JPanel();
+        jTextField1 = new javax.swing.JTextField();
+        jPanel4 = new javax.swing.JPanel();
         btnZero = new javax.swing.JButton();
         btnDot = new javax.swing.JButton();
         btnEqual = new javax.swing.JButton();
@@ -55,14 +55,14 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(240, 42, 130));
 
-        textfeildScreen.setBackground(new java.awt.Color(240, 42, 130));
-        textfeildScreen.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        textfeildScreen.setForeground(java.awt.Color.white);
-        textfeildScreen.setText("0");
-        textfeildScreen.setBorder(null);
-        textfeildScreen.addActionListener(new java.awt.event.ActionListener() {
+        jTextField1.setBackground(new java.awt.Color(240, 42, 130));
+        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jTextField1.setForeground(java.awt.Color.white);
+        jTextField1.setText("0");
+        jTextField1.setBorder(null);
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textfeildScreenActionPerformed(evt);
+                jTextField1ActionPerformed(evt);
             }
         });
 
@@ -72,22 +72,22 @@ public class NewJFrame extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(textfeildScreen, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(textfeildScreen, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
+                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        textfeildScreen.getAccessibleContext().setAccessibleName("TextFeild1");
-        textfeildScreen.getAccessibleContext().setAccessibleDescription("TextFeild1");
+        jTextField1.getAccessibleContext().setAccessibleName("TextFeild1");
+        jTextField1.getAccessibleContext().setAccessibleDescription("TextFeild1");
 
-        panalBtns.setBackground(new java.awt.Color(53, 53, 53));
-        panalBtns.setForeground(new java.awt.Color(53, 53, 53));
+        jPanel4.setBackground(new java.awt.Color(53, 53, 53));
+        jPanel4.setForeground(new java.awt.Color(53, 53, 53));
 
         btnZero.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnZero.setForeground(java.awt.Color.white);
@@ -228,7 +228,6 @@ public class NewJFrame extends javax.swing.JFrame {
 
         btnDivison.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnDivison.setForeground(new java.awt.Color(240, 42, 130));
-        btnDivison.setText("÷");
         btnDivison.setContentAreaFilled(false);
         btnDivison.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -276,14 +275,14 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout panalBtnsLayout = new javax.swing.GroupLayout(panalBtns);
-        panalBtns.setLayout(panalBtnsLayout);
-        panalBtnsLayout.setHorizontalGroup(
-            panalBtnsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panalBtnsLayout.createSequentialGroup()
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(panalBtnsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panalBtnsLayout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(btnSeven, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnEight, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -292,71 +291,71 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
                         .addComponent(btnMultiplication, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())
-                    .addGroup(panalBtnsLayout.createSequentialGroup()
-                        .addGroup(panalBtnsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnOne, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnZero, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnfour, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnClear))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(panalBtnsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panalBtnsLayout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addComponent(btnTan)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btnDivison, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(panalBtnsLayout.createSequentialGroup()
-                                .addGroup(panalBtnsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(btnDot, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(panalBtnsLayout.createSequentialGroup()
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
                                         .addComponent(btnTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(btnThree, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(panalBtnsLayout.createSequentialGroup()
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
                                         .addComponent(btnFive, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(btnSix, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(panalBtnsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(btnSum, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(btnDifference, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(btnEqual, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(10, 10, 10))))
         );
-        panalBtnsLayout.setVerticalGroup(
-            panalBtnsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panalBtnsLayout.createSequentialGroup()
-                .addGroup(panalBtnsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panalBtnsLayout.createSequentialGroup()
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnSeven, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panalBtnsLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(panalBtnsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnTan)
                             .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnClear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnDivison, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(5, 5, 5)
-                        .addGroup(panalBtnsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnMultiplication, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnNine, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnEight, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGroup(panalBtnsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panalBtnsLayout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(51, 51, 51)
-                        .addGroup(panalBtnsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnOne, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnThree, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(panalBtnsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnZero, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnDot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(panalBtnsLayout.createSequentialGroup()
-                        .addGroup(panalBtnsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnDifference, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnSix, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnFive, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -374,7 +373,7 @@ public class NewJFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(panalBtns, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 57, Short.MAX_VALUE))
         );
@@ -383,7 +382,7 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panalBtns, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(102, Short.MAX_VALUE))
         );
 
@@ -391,14 +390,14 @@ public class NewJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     private void calculate(String operation)
     {
-        String currentValue = textfeildScreen.getText();
+        String currentValue = jTextField1.getText();
         CalculatorControler controler = CalculatorControler.getInstance();
         int indexOfOperator = 0;
         if(token.compareTo("") == 0)
         {
             number = currentValue;
             token = operation;
-            textfeildScreen.setText(currentValue + operation);
+            jTextField1.setText(currentValue + operation);
         }
         else
         {
@@ -411,16 +410,21 @@ public class NewJFrame extends javax.swing.JFrame {
                     {
                         secondValue+= currentValue.charAt(i);
                     }
-                    if (secondValue.compareTo("") == 0)
+                    if(indexOfOperator == currentValue.length()-1 )
+                    {
+                        token = operation;
+                        jTextField1.setText(currentValue.substring(0, currentValue.length()-1) + operation);
+                    }
+                    /*else if (secondValue.compareTo("") == 0)
                     {
                         number = "" + controler.addition(Float.parseFloat(number), Float.parseFloat(number));
                         textfeildScreen.setText(number + operation);
                         token = operation;
-                    }
+                    }*/
                     else
                     {
                         number = "" + controler.addition(Float.parseFloat(number), Float.parseFloat(secondValue));
-                        textfeildScreen.setText(number + operation);
+                        jTextField1.setText(number + operation);
                         token = operation;
                     }
                     break;
@@ -430,22 +434,21 @@ public class NewJFrame extends javax.swing.JFrame {
                     {
                         secondValue+= currentValue.charAt(i);
                     }
-                    if(secondValue.contains("-+") || secondValue.contains("-X") || secondValue.contains("-÷"))
+                    if(indexOfOperator == currentValue.length()-1 )
                     {
-                        textfeildScreen.setText("Math Error");
-                        token = "";
-                        number = "";
+                        token = operation;
+                        jTextField1.setText(currentValue.substring(0, currentValue.length()-1) + operation);
                     }
-                    else if (secondValue.compareTo("") == 0)
+                    /*if (secondValue.compareTo("") == 0)
                     {
                         number = "" + controler.subtraction(Float.parseFloat(number), Float.parseFloat(number));
                         textfeildScreen.setText(number + operation);
                         token = operation;
-                    }
+                    }*/
                     else
                     {
                         number = "" + controler.subtraction(Float.parseFloat(number), Float.parseFloat(secondValue));
-                        textfeildScreen.setText(number + operation);
+                        jTextField1.setText(number + operation);
                         token = operation;
                     }
                     break;
@@ -455,22 +458,21 @@ public class NewJFrame extends javax.swing.JFrame {
                     {
                         secondValue+= currentValue.charAt(i);
                     }
-                    if(secondValue.contains("X+") || secondValue.contains("X-") || secondValue.contains("X÷"))
+                    if(indexOfOperator == currentValue.length()-1 )
                     {
-                        textfeildScreen.setText("Math Error");
-                        token = "";
-                        number = "";
+                        token = operation;
+                        jTextField1.setText(currentValue.substring(0, currentValue.length()-1) + operation);
                     }
-                    else if (secondValue.compareTo("") == 0)
+                    /*if (secondValue.compareTo("") == 0)
                     {
                         number = "" + controler.multiplication(Float.parseFloat(number), Float.parseFloat(number));
                         textfeildScreen.setText(number + operation);
                         token = operation;
-                    }
+                    }*/
                     else
                     {
                         number = "" + controler.multiplication(Float.parseFloat(number), Float.parseFloat(secondValue));
-                        textfeildScreen.setText(number + operation);
+                        jTextField1.setText(number + operation);
                         token = operation;
                     }
                     break;
@@ -480,22 +482,21 @@ public class NewJFrame extends javax.swing.JFrame {
                     {
                         secondValue+= currentValue.charAt(i);
                     }
-                    if(secondValue.contains("÷+") || secondValue.contains("÷-") || secondValue.contains("÷X"))
+                    if(indexOfOperator == currentValue.length()-1 )
                     {
-                        textfeildScreen.setText("Math Error");
-                        token = "";
-                        number = "";
+                        token = operation;
+                        jTextField1.setText(currentValue.substring(0, currentValue.length()-1) + operation);
                     }
-                    else if (secondValue.compareTo("") == 0)
+                    /*if (secondValue.compareTo("") == 0)
                     {
                         number = "" + controler.division(Float.parseFloat(number), Float.parseFloat(number));
                         textfeildScreen.setText(number + operation);
                         token = operation;
-                    }
+                    }*/
                     else
                     {
                         number = "" + controler.division(Float.parseFloat(number), Float.parseFloat(secondValue));
-                        textfeildScreen.setText(number + operation);
+                        jTextField1.setText(number + operation);
                         token = operation;
                     }
                     break;  
@@ -508,7 +509,9 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
         // TODO add your handling code here:
-        textfeildScreen.setText("0");
+        jTextField1.setText("0");
+        token = "";
+        number = "";
     }//GEN-LAST:event_btnClearActionPerformed
 
     private void btnDivisonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivisonActionPerformed
@@ -517,149 +520,166 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void btnfourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfourActionPerformed
         // TODO add your handling code here:
-        String currentValue = textfeildScreen.getText();
+        String currentValue = jTextField1.getText();
         if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
         {
-            textfeildScreen.setText("4");
+            jTextField1.setText("4");
         }
         else
         {
-          textfeildScreen.setText(currentValue + "4");
+          jTextField1.setText(currentValue + "4");
         }
     }//GEN-LAST:event_btnfourActionPerformed
 
     private void btnOneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOneActionPerformed
         // TODO add your handling code here:
-        String currentValue = textfeildScreen.getText();
+        String currentValue = jTextField1.getText();
         if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
         {
-            textfeildScreen.setText("1");
+            jTextField1.setText("1");
         }
         else
         {
-          textfeildScreen.setText(currentValue + "1");
+          jTextField1.setText(currentValue + "1");
         }
     }//GEN-LAST:event_btnOneActionPerformed
 
     private void btnDotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDotActionPerformed
         // TODO add your handling code here:
-        String currentValue = textfeildScreen.getText();
+        String currentValue = jTextField1.getText();
         if(currentValue.contains(".") == true )
         {
-            textfeildScreen.setText("Invalid Number");
+            jTextField1.setText("Invalid Number");
         }
         else if(currentValue.compareTo("Invalid Number") == 0)
         {
-            textfeildScreen.setText("Invalid Number");
+            jTextField1.setText("Invalid Number");
         }
         else
         {
-          textfeildScreen.setText(currentValue + ".");
+          jTextField1.setText(currentValue + ".");
         }
     }//GEN-LAST:event_btnDotActionPerformed
 
-    private void textfeildScreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textfeildScreenActionPerformed
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textfeildScreenActionPerformed
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void btnZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnZeroActionPerformed
         // TODO add your handling code here:
-        String currentValue = textfeildScreen.getText();
+        String currentValue = jTextField1.getText();
         if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
         {
-            textfeildScreen.setText("0");
+            jTextField1.setText("0");
         }
         else
         {
-          textfeildScreen.setText(currentValue + "0");
+          jTextField1.setText(currentValue + "0");
         }
         
     }//GEN-LAST:event_btnZeroActionPerformed
 
     private void btnTwoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTwoActionPerformed
         // TODO add your handling code here:
-        String currentValue = textfeildScreen.getText();
+        String currentValue = jTextField1.getText();
         if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
         {
-            textfeildScreen.setText("2");
+            jTextField1.setText("2");
         }
         else
         {
-          textfeildScreen.setText(currentValue + "2");
+          jTextField1.setText(currentValue + "2");
         }
     }//GEN-LAST:event_btnTwoActionPerformed
 
     private void btnThreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThreeActionPerformed
         // TODO add your handling code here:
-        String currentValue = textfeildScreen.getText();
+        String currentValue = jTextField1.getText();
         if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
         {
-            textfeildScreen.setText("3");
+            jTextField1.setText("3");
         }
         else 
         {
-          textfeildScreen.setText(currentValue + "3");
+          jTextField1.setText(currentValue + "3");
         }
     }//GEN-LAST:event_btnThreeActionPerformed
 
     private void btnFiveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFiveActionPerformed
         // TODO add your handling code here:
-        String currentValue = textfeildScreen.getText();
+        String currentValue = jTextField1.getText();
         if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
         {
-            textfeildScreen.setText("4");
+            jTextField1.setText("4");
         }
         else
         {
-          textfeildScreen.setText(currentValue + "4");
+          jTextField1.setText(currentValue + "4");
         }
     }//GEN-LAST:event_btnFiveActionPerformed
 
     private void btnSixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSixActionPerformed
         // TODO add your handling code here:
-        String currentValue = textfeildScreen.getText();
+        String currentValue = jTextField1.getText();
         if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
         {
-            textfeildScreen.setText("6");
+            jTextField1.setText("6");
         }
         else
         {
-          textfeildScreen.setText(currentValue + "6");
+          jTextField1.setText(currentValue + "6");
         }
     }//GEN-LAST:event_btnSixActionPerformed
 
     private void btnSevenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSevenActionPerformed
         // TODO add your handling code here:
-        String currentValue = textfeildScreen.getText();
+        String currentValue = jTextField1.getText();
         if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
         {
-            textfeildScreen.setText("7");
+            jTextField1.setText("7");
         }
         else
         {
-          textfeildScreen.setText(currentValue + "7");
+          jTextField1.setText(currentValue + "7");
         }
     }//GEN-LAST:event_btnSevenActionPerformed
 
     private void btnTanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTanActionPerformed
         // TODO add your handling code here:
-        String currentValue = textfeildScreen.getText();
+        String currentValue = jTextField1.getText();
         if(currentValue.compareTo("Invalid Number") == 0)
         {
-            textfeildScreen.setText("tan(");
+            jTextField1.setText("tan(");
         }
         else if(currentValue.contains("tan") == true )
         {
-            textfeildScreen.setText("Invalid Number");
+            jTextField1.setText("Invalid Number");
         }
         else
         {
-            textfeildScreen.setText("tan(");
+            jTextField1.setText("tan(");
         }
     }//GEN-LAST:event_btnTanActionPerformed
 
     private void btnEqualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEqualActionPerformed
         // TODO add your handling code here:
+        String currentValue = jTextField1.getText();
+        if(currentValue.contains("+"))
+        {
+            calculate("+");
+        }
+        else if(currentValue.contains("-"))
+        {
+            calculate("-");
+        }
+        else if(currentValue.contains("X"))
+        {
+            calculate("X");
+        }
+        else if(currentValue.contains("÷"))
+        {
+            calculate("÷");
+        }
     }//GEN-LAST:event_btnEqualActionPerformed
 
     private void btnSumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumActionPerformed
@@ -672,27 +692,27 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void btnEightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEightActionPerformed
         // TODO add your handling code here:
-        String currentValue = textfeildScreen.getText();
+        String currentValue = jTextField1.getText();
         if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
         {
-            textfeildScreen.setText("8");
+            jTextField1.setText("8");
         }
         else
         {
-          textfeildScreen.setText(currentValue + "8");
+          jTextField1.setText(currentValue + "8");
         }
     }//GEN-LAST:event_btnEightActionPerformed
 
     private void btnNineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNineActionPerformed
         // TODO add your handling code here:
-        String currentValue = textfeildScreen.getText();
+        String currentValue = jTextField1.getText();
         if(currentValue.compareTo("0") == 0 || currentValue.compareTo("Invalid Number") == 0 || currentValue.contains("Invalid input"))
         {
-            textfeildScreen.setText("9");
+            jTextField1.setText("9");
         }
         else
         {
-          textfeildScreen.setText(currentValue + "9");
+          jTextField1.setText(currentValue + "9");
         }
     }//GEN-LAST:event_btnNineActionPerformed
 
@@ -752,7 +772,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnZero;
     private javax.swing.JButton btnfour;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel panalBtns;
-    private javax.swing.JTextField textfeildScreen;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
