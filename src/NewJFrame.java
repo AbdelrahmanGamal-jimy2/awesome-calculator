@@ -751,8 +751,11 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSevenActionPerformed
 
     private void btnTanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTanActionPerformed
-        // TODO add your handling code here:
         String currentValue = jTextField1.getText();
+        if(currentValue.compareTo("tan(") == 0)
+        {
+            return;
+        }
         if(currentValue.contains("tan(") == true )
         {
             //jTextField1.setText("Invalid Number");
@@ -833,8 +836,18 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPowerActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
-        // TODO add your handling code here:
         String currentValue = jTextField1.getText();
+        if(currentValue.compareTo("0") == 0)
+        {
+            return;
+        }
+        if(currentValue.compareTo("tan(") == 0)
+        {
+            jTextField1.setText("0");
+            token = "";
+            number = "";
+            return;
+        }
         if(currentValue.charAt(currentValue.length()-1) == '+' || currentValue.charAt(currentValue.length()-1) == '-' || currentValue.charAt(currentValue.length()-1) == 'X'
             || currentValue.charAt(currentValue.length()-1) == '÷' || currentValue.charAt(currentValue.length()-1) == '^')
         {
