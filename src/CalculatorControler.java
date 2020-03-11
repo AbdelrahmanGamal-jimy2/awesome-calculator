@@ -26,19 +26,19 @@ public class CalculatorControler {
     
     public double  addition(double  firstNum, double  secondNum)
     {       
-        return firstNum + secondNum;
+        return Math.round(firstNum + secondNum);
     }
     double  subtraction(double firstNum, double secondNum)
     {  
-        return firstNum - secondNum;
+        return Math.round(firstNum - secondNum);
     }
     double multiplication(double firstNum, double secondNum)
     {
-        return firstNum * secondNum;
+        return Math.round(firstNum * secondNum);
     }
     double division(double numerator , double denominator)
     {
-        return numerator / denominator;
+        return Math.round(numerator / denominator);
         
     }
     double power(double number, double toThePower)
@@ -47,11 +47,11 @@ public class CalculatorControler {
        {
            return number;
        }
-       return number * power( number,  toThePower-1);
+       return Math.round(number * power( number,  toThePower-1));
     }
     double tan(double number)
     {
-       return Math.tan(Math.toRadians(number));
+       return Math.round(Math.tan(Math.toRadians(number)));
     }
     int factorial(int number)
     {
@@ -59,7 +59,7 @@ public class CalculatorControler {
         {
             return 1;
         }
-        return number * factorial(number - 1);
+        return Math.round(number * factorial(number - 1));
     }
     
 }
