@@ -250,6 +250,7 @@
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="btnZero.setMnemonic(KeyEvent.VK_Y);"/>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnZero.addKeyListener(listener);"/>
             <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="NewJFrame_btnZero"/>
           </AuxValues>
         </Component>
@@ -268,6 +269,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDotActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnDot.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnEqual">
           <Properties>
@@ -284,6 +288,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEqualActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnEqual.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnOne">
           <Properties>
@@ -319,6 +326,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFourActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnFour.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnTwo">
           <Properties>
@@ -335,6 +345,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTwoActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnTwo.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnThree">
           <Properties>
@@ -351,6 +364,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnThreeActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnThree.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnFive">
           <Properties>
@@ -367,6 +383,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFiveActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnFive.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnSix">
           <Properties>
@@ -383,6 +402,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSixActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnSix.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnSeven">
           <Properties>
@@ -399,6 +421,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSevenActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnSeven.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnEight">
           <Properties>
@@ -415,6 +440,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEightActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnEight.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnNine">
           <Properties>
@@ -431,6 +459,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNineActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnNine.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnDelete">
           <Properties>
@@ -448,6 +479,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeleteActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnDelete.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnClear">
           <Properties>
@@ -464,6 +498,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnClearActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnClear.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnDivison">
           <Properties>
@@ -480,6 +517,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDivisonActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnDivison.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnSum">
           <Properties>
@@ -496,6 +536,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnSum.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnDifference">
           <Properties>
@@ -512,6 +555,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDifferenceActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnDifference.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnMultiplication">
           <Properties>
@@ -528,6 +574,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMultiplicationActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnMultiplication.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnTan">
           <Properties>
@@ -544,6 +593,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTanActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnTan.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnPower">
           <Properties>
@@ -563,6 +615,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPowerActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="btnPower.addKeyListener(listener);"/>
+          </AuxValues>
         </Component>
       </SubComponents>
     </Container>

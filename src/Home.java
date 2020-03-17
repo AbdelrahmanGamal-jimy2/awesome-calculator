@@ -39,6 +39,12 @@ public class Home extends javax.swing.JFrame {
             System.out.println("   Code: " + KeyEvent.getKeyText(code));
             switch(KeyEvent.getKeyText(code))
             {
+                case "0":
+                    btnZero.doClick();
+                    break;
+                case "NumPad-0":
+                    btnZero.doClick();
+                    break;
                 case "1":
                     btnOne.doClick();
                     break;
@@ -224,6 +230,7 @@ public class Home extends javax.swing.JFrame {
                 btnZeroActionPerformed(evt);
             }
         });
+        btnZero.addKeyListener(listener);
 
         btnDot.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         btnDot.setForeground(java.awt.Color.white);
@@ -235,6 +242,7 @@ public class Home extends javax.swing.JFrame {
                 btnDotActionPerformed(evt);
             }
         });
+        btnDot.addKeyListener(listener);
 
         btnEqual.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnEqual.setForeground(new java.awt.Color(240, 42, 130));
@@ -246,6 +254,7 @@ public class Home extends javax.swing.JFrame {
                 btnEqualActionPerformed(evt);
             }
         });
+        btnEqual.addKeyListener(listener);
 
         btnOne.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnOne.setForeground(java.awt.Color.white);
@@ -268,6 +277,7 @@ public class Home extends javax.swing.JFrame {
                 btnFourActionPerformed(evt);
             }
         });
+        btnFour.addKeyListener(listener);
 
         btnTwo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnTwo.setForeground(java.awt.Color.white);
@@ -279,6 +289,7 @@ public class Home extends javax.swing.JFrame {
                 btnTwoActionPerformed(evt);
             }
         });
+        btnTwo.addKeyListener(listener);
 
         btnThree.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnThree.setForeground(java.awt.Color.white);
@@ -290,6 +301,7 @@ public class Home extends javax.swing.JFrame {
                 btnThreeActionPerformed(evt);
             }
         });
+        btnThree.addKeyListener(listener);
 
         btnFive.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnFive.setForeground(java.awt.Color.white);
@@ -301,6 +313,7 @@ public class Home extends javax.swing.JFrame {
                 btnFiveActionPerformed(evt);
             }
         });
+        btnFive.addKeyListener(listener);
 
         btnSix.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnSix.setForeground(java.awt.Color.white);
@@ -312,6 +325,7 @@ public class Home extends javax.swing.JFrame {
                 btnSixActionPerformed(evt);
             }
         });
+        btnSix.addKeyListener(listener);
 
         btnSeven.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnSeven.setForeground(java.awt.Color.white);
@@ -323,6 +337,7 @@ public class Home extends javax.swing.JFrame {
                 btnSevenActionPerformed(evt);
             }
         });
+        btnSeven.addKeyListener(listener);
 
         btnEight.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnEight.setForeground(java.awt.Color.white);
@@ -334,6 +349,7 @@ public class Home extends javax.swing.JFrame {
                 btnEightActionPerformed(evt);
             }
         });
+        btnEight.addKeyListener(listener);
 
         btnNine.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnNine.setForeground(java.awt.Color.white);
@@ -345,6 +361,7 @@ public class Home extends javax.swing.JFrame {
                 btnNineActionPerformed(evt);
             }
         });
+        btnNine.addKeyListener(listener);
 
         btnDelete.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnDelete.setForeground(java.awt.Color.white);
@@ -357,6 +374,7 @@ public class Home extends javax.swing.JFrame {
                 btnDeleteActionPerformed(evt);
             }
         });
+        btnDelete.addKeyListener(listener);
 
         btnClear.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnClear.setForeground(java.awt.Color.white);
@@ -368,6 +386,7 @@ public class Home extends javax.swing.JFrame {
                 btnClearActionPerformed(evt);
             }
         });
+        btnClear.addKeyListener(listener);
 
         btnDivison.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnDivison.setForeground(new java.awt.Color(240, 42, 130));
@@ -379,6 +398,7 @@ public class Home extends javax.swing.JFrame {
                 btnDivisonActionPerformed(evt);
             }
         });
+        btnDivison.addKeyListener(listener);
 
         btnSum.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnSum.setForeground(new java.awt.Color(240, 42, 130));
@@ -390,6 +410,7 @@ public class Home extends javax.swing.JFrame {
                 btnSumActionPerformed(evt);
             }
         });
+        btnSum.addKeyListener(listener);
 
         btnDifference.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         btnDifference.setForeground(new java.awt.Color(240, 42, 130));
@@ -401,6 +422,7 @@ public class Home extends javax.swing.JFrame {
                 btnDifferenceActionPerformed(evt);
             }
         });
+        btnDifference.addKeyListener(listener);
 
         btnMultiplication.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnMultiplication.setForeground(new java.awt.Color(240, 42, 130));
@@ -412,6 +434,7 @@ public class Home extends javax.swing.JFrame {
                 btnMultiplicationActionPerformed(evt);
             }
         });
+        btnMultiplication.addKeyListener(listener);
 
         btnTan.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnTan.setForeground(java.awt.Color.white);
@@ -423,6 +446,7 @@ public class Home extends javax.swing.JFrame {
                 btnTanActionPerformed(evt);
             }
         });
+        btnTan.addKeyListener(listener);
 
         btnPower.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnPower.setForeground(java.awt.Color.white);
@@ -435,6 +459,7 @@ public class Home extends javax.swing.JFrame {
                 btnPowerActionPerformed(evt);
             }
         });
+        btnPower.addKeyListener(listener);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -601,12 +626,6 @@ public class Home extends javax.swing.JFrame {
                         token = operation;
                         jTextField1.setText(currentValue.substring(0, currentValue.length()-1) + operation);
                     }
-                    /*if (secondValue.compareTo("") == 0)
-                    {
-                        number = "" + controler.subtraction(Float.parseFloat(number), Float.parseFloat(number));
-                        textfeildScreen.setText(number + operation);
-                        token = operation;
-                    }*/
                     else
                     {
                         number = "" + controler.subtraction(Float.parseFloat(number), Float.parseFloat(secondValue));
