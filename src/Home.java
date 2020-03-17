@@ -471,6 +471,12 @@ public class Home extends javax.swing.JFrame {
         btnFactorial.setBorder(null);
         btnFactorial.setBorderPainted(false);
         btnFactorial.setContentAreaFilled(false);
+        btnFactorial.addKeyListener(listener);
+        btnFactorial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFactorialActionPerformed(evt);
+            }
+        });
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton1.setForeground(new java.awt.Color(240, 42, 130));
@@ -624,6 +630,12 @@ public class Home extends javax.swing.JFrame {
                 token = "(";
                 return;
             }
+            else if (operation.compareTo("!") == 0)
+            {
+                token = "!";
+                changeFontAndsetTextFeild(currentValue + "!");
+                return;
+            }
             number = currentValue;
             token = operation;
             changeFontAndsetTextFeild(currentValue + operation);
@@ -751,7 +763,15 @@ public class Home extends javax.swing.JFrame {
                         
                     }
                     break;
-                    
+                case "!":
+                    indexOfOperator = currentValue.lastIndexOf("!");
+                    for(int i =0;i<indexOfOperator;i++)
+                    {
+                        secondValue+= currentValue.charAt(i);
+                    }
+                    number = "" + controler.factorial(Float.parseFloat(secondValue));
+                    changeFontAndsetTextFeild(number + operation);
+                    token = operation;
             }
         }
     }
@@ -969,6 +989,10 @@ public class Home extends javax.swing.JFrame {
         {
             calculate("(");
         }
+        else if(currentValue.contains("!"))
+        {
+            calculate("(");
+        }
     }//GEN-LAST:event_btnEqualActionPerformed
 
     private void btnSumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumActionPerformed
@@ -1033,6 +1057,10 @@ public class Home extends javax.swing.JFrame {
             jTextField1.setText(currentValue.substring(0, currentValue.length()-1));
         }
     }//GEN-LAST:event_btnDeleteActionPerformed
+
+    private void btnFactorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFactorialActionPerformed
+        calculate("!");
+    }//GEN-LAST:event_btnFactorialActionPerformed
 
     /**
      * @param args the command line arguments
