@@ -43,11 +43,11 @@ public class CalculatorControler {
     }
     double power(double number, double toThePower)
     {
-       if (toThePower == 1)
+       if (toThePower == 0)
        {
-           return number;
+           return 1;
        }
-       return Math.round(number * power( number,  toThePower-1));
+       return number * power( number,  toThePower-1);
     }
     double tan(double number)
     {
