@@ -1,4 +1,5 @@
 
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -178,6 +179,9 @@ public class Home extends javax.swing.JFrame {
         btnMultiplication = new javax.swing.JButton();
         btnTan = new javax.swing.JButton();
         btnPower = new javax.swing.JButton();
+        btnFactorial = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -201,8 +205,8 @@ public class Home extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jTextField1)
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -461,6 +465,25 @@ public class Home extends javax.swing.JFrame {
         });
         btnPower.addKeyListener(listener);
 
+        btnFactorial.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btnFactorial.setForeground(new java.awt.Color(240, 42, 130));
+        btnFactorial.setText("!");
+        btnFactorial.setBorder(null);
+        btnFactorial.setBorderPainted(false);
+        btnFactorial.setContentAreaFilled(false);
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(240, 42, 130));
+        jButton1.setText("Taylor Swift");
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(240, 42, 130));
+        jButton2.setText("-/+");
+        jButton2.setBorderPainted(false);
+        jButton2.setContentAreaFilled(false);
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -468,24 +491,19 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnOne, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnFour, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnClear)
-                    .addComponent(btnSeven, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnZero, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(btnTan)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnDelete)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnDivison)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnOne, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnFour, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnSeven, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnZero, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(9, 9, 9))
+                            .addComponent(btnClear, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(btnSix, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(btnThree, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -495,30 +513,45 @@ public class Home extends javax.swing.JFrame {
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(btnDifference, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
                                         .addComponent(btnSum, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addComponent(btnEqual, javax.swing.GroupLayout.Alignment.TRAILING))))
+                                    .addComponent(btnEqual, javax.swing.GroupLayout.Alignment.TRAILING)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel4Layout.createSequentialGroup()
+                                    .addComponent(btnTan)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(btnDelete)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(btnDivison))
+                                .addGroup(jPanel4Layout.createSequentialGroup()
+                                    .addGap(10, 10, 10)
+                                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(btnFive, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnEight, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnDot, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(35, 35, 35)
+                                    .addComponent(btnNine, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(btnMultiplication, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(10, 10, 10))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnFive, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnEight, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnTwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnDot, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnNine, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnMultiplication, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addComponent(jButton2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnFactorial, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(8, 8, 8))))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(18, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnFactorial, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnSeven, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addContainerGap(21, Short.MAX_VALUE)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnDivison, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnDelete)
@@ -529,7 +562,10 @@ public class Home extends javax.swing.JFrame {
                             .addComponent(btnMultiplication, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(btnNine, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(btnEight, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(btnEight, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                        .addComponent(btnSeven, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(51, 51, 51)
@@ -590,7 +626,7 @@ public class Home extends javax.swing.JFrame {
             }
             number = currentValue;
             token = operation;
-            jTextField1.setText(currentValue + operation);
+            changeFontAndsetTextFeild(currentValue + operation);
         }
         else
         {
@@ -606,12 +642,12 @@ public class Home extends javax.swing.JFrame {
                     if(indexOfOperator == currentValue.length()-1 )
                     {
                         token = operation;
-                        jTextField1.setText(currentValue.substring(0, currentValue.length()-1) + operation);
+                        changeFontAndsetTextFeild(currentValue.substring(0, currentValue.length()-1) + operation);
                     }
                     else
                     {
                         number = "" + controler.addition(Float.parseFloat(number), Float.parseFloat(secondValue));
-                        jTextField1.setText(number + operation);
+                        changeFontAndsetTextFeild(number + operation);
                         token = operation;
                     }
                     break;
@@ -624,12 +660,12 @@ public class Home extends javax.swing.JFrame {
                     if(indexOfOperator == currentValue.length()-1 )
                     {
                         token = operation;
-                        jTextField1.setText(currentValue.substring(0, currentValue.length()-1) + operation);
+                        changeFontAndsetTextFeild(currentValue.substring(0, currentValue.length()-1) + operation);
                     }
                     else
                     {
                         number = "" + controler.subtraction(Float.parseFloat(number), Float.parseFloat(secondValue));
-                        jTextField1.setText(number + operation);
+                        changeFontAndsetTextFeild(number + operation);
                         token = operation;
                     }
                     break;
@@ -642,12 +678,12 @@ public class Home extends javax.swing.JFrame {
                     if(indexOfOperator == currentValue.length()-1 )
                     {
                         token = operation;
-                        jTextField1.setText(currentValue.substring(0, currentValue.length()-1) + operation);
+                        changeFontAndsetTextFeild(currentValue.substring(0, currentValue.length()-1) + operation);
                     }
                     else
                     {
                         number = "" + controler.multiplication(Float.parseFloat(number), Float.parseFloat(secondValue));
-                        jTextField1.setText(number + operation);
+                        changeFontAndsetTextFeild(number + operation);
                         token = operation;
                     }
                     break;
@@ -660,18 +696,12 @@ public class Home extends javax.swing.JFrame {
                     if(indexOfOperator == currentValue.length()-1 )
                     {
                         token = operation;
-                        jTextField1.setText(currentValue.substring(0, currentValue.length()-1) + operation);
+                        changeFontAndsetTextFeild(currentValue.substring(0, currentValue.length()-1) + operation);
                     }
-                    /*if (secondValue.compareTo("") == 0)
-                    {
-                        number = "" + controler.division(Float.parseFloat(number), Float.parseFloat(number));
-                        textfeildScreen.setText(number + operation);
-                        token = operation;
-                    }*/
                     else
                     {
                         number = "" + controler.division(Float.parseFloat(number), Float.parseFloat(secondValue));
-                        jTextField1.setText(number + operation);
+                        changeFontAndsetTextFeild(number + operation);
                         token = operation;
                     }
                     break;
@@ -684,12 +714,12 @@ public class Home extends javax.swing.JFrame {
                     if(indexOfOperator == currentValue.length()-1 )
                     {
                         token = operation;
-                        jTextField1.setText(currentValue.substring(0, currentValue.length()-1) + operation);
+                        changeFontAndsetTextFeild(currentValue.substring(0, currentValue.length()-1) + operation);
                     }
                     else
                     {
                         number = "" + controler.power(Float.parseFloat(number), Float.parseFloat(secondValue));
-                        jTextField1.setText(number + operation);
+                        changeFontAndsetTextFeild(number + operation);
                         token = operation;
                     }
                     break;
@@ -702,19 +732,19 @@ public class Home extends javax.swing.JFrame {
                     if(indexOfOperator == currentValue.length()-1 )
                     {
                         token = operation;
-                        jTextField1.setText(currentValue.substring(0, currentValue.length()-1) + operation);
+                        changeFontAndsetTextFeild(currentValue.substring(0, currentValue.length()-1) + operation);
                     }
                     else
                     {
                         number = "" + controler.tan(Float.parseFloat(secondValue));
                         if(operation.compareTo("(") == 0)
                         {
-                            jTextField1.setText("tan(" + number);
+                            changeFontAndsetTextFeild("tan(" + number);
                             token = "(";
                         }
                         else
                         {
-                            jTextField1.setText(number + operation);
+                            changeFontAndsetTextFeild(number + operation);
                             token = operation;
                         }
                         
@@ -734,6 +764,15 @@ public class Home extends javax.swing.JFrame {
                 count++;
         }
         return count;
+    }
+    private void changeFontAndsetTextFeild(String value)
+    {
+        if(value.length() >15 && (jTextField1.getFont().getSize() > 10)  )
+        {
+            Font font1 = new Font("Tahoma", Font.PLAIN, 50 - value.length());
+            jTextField1.setFont(font1);
+        }
+        jTextField1.setText(value);
     }
     private void btnMultiplicationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicationActionPerformed
         calculate("X");
@@ -759,7 +798,7 @@ public class Home extends javax.swing.JFrame {
         }
         else
         {
-          jTextField1.setText(currentValue + "4");
+          changeFontAndsetTextFeild(currentValue + "4");
         }
     }//GEN-LAST:event_btnFourActionPerformed
 
@@ -772,7 +811,8 @@ public class Home extends javax.swing.JFrame {
         }
         else
         {
-          jTextField1.setText(currentValue + "1");
+           changeFontAndsetTextFeild(currentValue + "1");
+           //jTextField1.setText(currentValue + "1");
         }
     }//GEN-LAST:event_btnOneActionPerformed
 
@@ -783,12 +823,12 @@ public class Home extends javax.swing.JFrame {
         if((currentValue.contains("+") || currentValue.contains("-") || currentValue.contains("X")  || currentValue.contains("^") || currentValue.contains("÷")) && count<2)
         {
             currentValue += ".";
-            jTextField1.setText(currentValue);
+            changeFontAndsetTextFeild(currentValue);
         }
         else if (count<1)
         {
             currentValue += ".";
-            jTextField1.setText(currentValue);
+            changeFontAndsetTextFeild(currentValue);
         }
     }//GEN-LAST:event_btnDotActionPerformed
 
@@ -819,7 +859,7 @@ public class Home extends javax.swing.JFrame {
         }
         else
         {
-          jTextField1.setText(currentValue + "2");
+            changeFontAndsetTextFeild(currentValue + "2");
         }
     }//GEN-LAST:event_btnTwoActionPerformed
 
@@ -832,7 +872,7 @@ public class Home extends javax.swing.JFrame {
         }
         else 
         {
-          jTextField1.setText(currentValue + "3");
+          changeFontAndsetTextFeild(currentValue + "3");
         }
     }//GEN-LAST:event_btnThreeActionPerformed
 
@@ -845,7 +885,7 @@ public class Home extends javax.swing.JFrame {
         }
         else
         {
-          jTextField1.setText(currentValue + "5");
+          changeFontAndsetTextFeild(currentValue + "5");
         }
     }//GEN-LAST:event_btnFiveActionPerformed
 
@@ -858,7 +898,7 @@ public class Home extends javax.swing.JFrame {
         }
         else
         {
-          jTextField1.setText(currentValue + "6");
+            changeFontAndsetTextFeild(currentValue + "6");
         }
     }//GEN-LAST:event_btnSixActionPerformed
 
@@ -871,7 +911,7 @@ public class Home extends javax.swing.JFrame {
         }
         else
         {
-          jTextField1.setText(currentValue + "7");
+            changeFontAndsetTextFeild(currentValue + "7");
         }
     }//GEN-LAST:event_btnSevenActionPerformed
 
@@ -893,7 +933,6 @@ public class Home extends javax.swing.JFrame {
         }
         else if(currentValue.contains("tan(") == true )
         {
-            //jTextField1.setText("Invalid Number");
             calculate("(");
         }
         else
@@ -949,7 +988,7 @@ public class Home extends javax.swing.JFrame {
         }
         else
         {
-          jTextField1.setText(currentValue + "8");
+            changeFontAndsetTextFeild(currentValue + "9");
         }
     }//GEN-LAST:event_btnEightActionPerformed
 
@@ -1039,6 +1078,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton btnDot;
     private javax.swing.JButton btnEight;
     private javax.swing.JButton btnEqual;
+    private javax.swing.JButton btnFactorial;
     private javax.swing.JButton btnFive;
     private javax.swing.JButton btnFour;
     private javax.swing.JButton btnMultiplication;
@@ -1052,6 +1092,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton btnThree;
     private javax.swing.JButton btnTwo;
     private javax.swing.JButton btnZero;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JTextField jTextField1;
