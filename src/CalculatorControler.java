@@ -55,7 +55,7 @@ public class CalculatorControler {
     }
     double factorial(double number)
     {
-        if (number == 1)
+        if (number == 0)
         {
             return 1;
         }

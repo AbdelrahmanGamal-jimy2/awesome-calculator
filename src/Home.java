@@ -705,6 +705,11 @@ public class Home extends javax.swing.JFrame {
                     {
                         secondValue+= currentValue.charAt(i);
                     }
+                    if(Float.parseFloat(secondValue) == 0)
+                    {
+                        btnClear.doClick();
+                        return;
+                    }
                     if(indexOfOperator == currentValue.length()-1 )
                     {
                         token = operation;
@@ -740,6 +745,12 @@ public class Home extends javax.swing.JFrame {
                     for(int i =indexOfOperator+1;i<currentValue.length();i++)
                     {
                         secondValue+= currentValue.charAt(i);
+                    }
+                    if(Float.parseFloat(secondValue) == 90)
+                    {
+                        btnClear.doClick();
+                        return;
+                        
                     }
                     if(indexOfOperator == currentValue.length()-1 )
                     {
@@ -787,9 +798,9 @@ public class Home extends javax.swing.JFrame {
     }
     private void changeFontAndsetTextFeild(String value)
     {
-        if(value.length() >15 && (jTextField1.getFont().getSize() > 10)  )
+        if(value.length() >15 && (jTextField1.getFont().getSize() > 15)  )
         {
-            Font font1 = new Font("Tahoma", Font.PLAIN, 50 - value.length());
+            Font font1 = new Font("Tahoma", Font.PLAIN, 40 - value.length());
             jTextField1.setFont(font1);
         }
         jTextField1.setText(value);
@@ -991,7 +1002,7 @@ public class Home extends javax.swing.JFrame {
         }
         else if(currentValue.contains("!"))
         {
-            calculate("(");
+            calculate("!");
         }
     }//GEN-LAST:event_btnEqualActionPerformed
 
