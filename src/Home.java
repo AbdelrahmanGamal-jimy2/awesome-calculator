@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
@@ -35,7 +36,7 @@ public class Home extends javax.swing.JFrame {
         @Override
 
         public void keyPressed(KeyEvent event) {
-
+            
             int code = event.getKeyCode();
             System.out.println("   Code: " + KeyEvent.getKeyText(code));
             switch(KeyEvent.getKeyText(code))
@@ -180,8 +181,8 @@ public class Home extends javax.swing.JFrame {
         btnTan = new javax.swing.JButton();
         btnPower = new javax.swing.JButton();
         btnFactorial = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnTaylorSwift = new javax.swing.JButton();
+        btnNegativeSign = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -430,7 +431,7 @@ public class Home extends javax.swing.JFrame {
 
         btnMultiplication.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnMultiplication.setForeground(new java.awt.Color(240, 42, 130));
-        btnMultiplication.setText("X");
+        btnMultiplication.setText(" X");
         btnMultiplication.setBorderPainted(false);
         btnMultiplication.setContentAreaFilled(false);
         btnMultiplication.addActionListener(new java.awt.event.ActionListener() {
@@ -478,22 +479,27 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(240, 42, 130));
-        jButton1.setText("Taylor Swift");
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnTaylorSwift.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btnTaylorSwift.setForeground(new java.awt.Color(240, 42, 130));
+        btnTaylorSwift.setText("Taylor Swift");
+        btnTaylorSwift.setBorderPainted(false);
+        btnTaylorSwift.setContentAreaFilled(false);
+        btnTaylorSwift.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnTaylorSwiftActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(240, 42, 130));
-        jButton2.setText("-/+");
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
+        btnNegativeSign.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btnNegativeSign.setForeground(new java.awt.Color(240, 42, 130));
+        btnNegativeSign.setText("-/+");
+        btnNegativeSign.setBorderPainted(false);
+        btnNegativeSign.setContentAreaFilled(false);
+        btnNegativeSign.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNegativeSignActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -545,9 +551,9 @@ public class Home extends javax.swing.JFrame {
                                     .addComponent(btnMultiplication, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(10, 10, 10))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addComponent(jButton2)
+                        .addComponent(btnNegativeSign)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnTaylorSwift, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnFactorial, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(8, 8, 8))))
@@ -557,9 +563,9 @@ public class Home extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(18, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnNegativeSign, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnFactorial, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnTaylorSwift, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
@@ -669,7 +675,7 @@ public class Home extends javax.swing.JFrame {
                     }
                     break;
                 case "-":
-                    indexOfOperator = currentValue.lastIndexOf("-");
+                    indexOfOperator = currentValue.indexOf("-", 1);
                     for(int i =indexOfOperator+1;i<currentValue.length();i++)
                     {
                         secondValue+= currentValue.charAt(i);
@@ -848,7 +854,6 @@ public class Home extends javax.swing.JFrame {
         else
         {
            changeFontAndsetTextFeild(currentValue + "1");
-           //jTextField1.setText(currentValue + "1");
         }
     }//GEN-LAST:event_btnOneActionPerformed
 
@@ -1078,12 +1083,58 @@ public class Home extends javax.swing.JFrame {
         calculate("!");
     }//GEN-LAST:event_btnFactorialActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnTaylorSwiftActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTaylorSwiftActionPerformed
         // TODO add your handling code here:
         Image image = new Image();
         image.setVisible(true);
         image.setResizable(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnTaylorSwiftActionPerformed
+
+    private void btnNegativeSignActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNegativeSignActionPerformed
+        // TODO add your handling code here:
+        String currentValue = jTextField1.getText();
+        int count = numberOfChar(currentValue, '-');
+        if (currentValue.compareTo("0") == 0)
+        {
+            return;
+        }
+        else if(currentValue.contains("tan") && (currentValue.substring(currentValue.indexOf("(")+1,currentValue.indexOf("(")+2).compareTo("-")) != 0)
+        {
+            currentValue = currentValue.substring(0, currentValue.indexOf("(")+1) 
+                    + "-" + currentValue.substring(currentValue.indexOf("(")+1);
+            changeFontAndsetTextFeild(currentValue);
+        }
+        else if(currentValue.contains("tan") && (currentValue.substring(currentValue.indexOf("(")+1,currentValue.indexOf("(")+2).compareTo("-")) == 0)
+        {
+            currentValue = currentValue.substring(0, currentValue.indexOf("(")+1) 
+                     + currentValue.substring(currentValue.indexOf("(")+2);
+            changeFontAndsetTextFeild(currentValue);
+        }
+        else if(!(currentValue.contains("+") || currentValue.contains("-") || currentValue.contains("X")  || currentValue.contains("^") || currentValue.contains("÷")))
+        {
+            
+            currentValue = "-" + currentValue;
+            changeFontAndsetTextFeild(currentValue);
+        }        
+        else
+        {
+             if((currentValue.charAt(currentValue.length()-1) == '-' || currentValue.charAt(currentValue.length()-1) == '+'
+                    || currentValue.charAt(currentValue.length()-1) == 'X'|| currentValue.charAt(currentValue.length()-1) == '^'
+                     || currentValue.charAt(currentValue.length()-1) == '÷') && (currentValue.charAt(currentValue.length()-2) == '-' 
+                     || currentValue.charAt(currentValue.length()-2) == '+'|| currentValue.charAt(currentValue.length()-2)== 'X'
+                     || currentValue.charAt(currentValue.length()-2) == '^'||currentValue.charAt(currentValue.length()-2) == '÷'))
+             {
+                 return;
+             }
+             else if((currentValue.charAt(currentValue.length()-1) == '-' || currentValue.charAt(currentValue.length()-1) == '+'
+                    || currentValue.charAt(currentValue.length()-1) == 'X'|| currentValue.charAt(currentValue.length()-1) == '^'
+                     || currentValue.charAt(currentValue.length()-1) == '÷'))
+             {
+                currentValue = currentValue + "-";
+                changeFontAndsetTextFeild(currentValue);
+             }
+        }
+    }//GEN-LAST:event_btnNegativeSignActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1133,6 +1184,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton btnFive;
     private javax.swing.JButton btnFour;
     private javax.swing.JButton btnMultiplication;
+    private javax.swing.JButton btnNegativeSign;
     private javax.swing.JButton btnNine;
     private javax.swing.JButton btnOne;
     private javax.swing.JButton btnPower;
@@ -1140,11 +1192,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton btnSix;
     private javax.swing.JButton btnSum;
     private javax.swing.JButton btnTan;
+    private javax.swing.JButton btnTaylorSwift;
     private javax.swing.JButton btnThree;
     private javax.swing.JButton btnTwo;
     private javax.swing.JButton btnZero;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JTextField jTextField1;
