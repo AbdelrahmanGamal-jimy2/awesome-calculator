@@ -43,6 +43,10 @@ public class CalculatorControler {
     }
     double power(double number, double toThePower)
     {
+       if(toThePower <0)
+       {
+           return Math.pow(number, toThePower);
+       }
        if (toThePower == 0)
        {
            return 1;
